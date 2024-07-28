@@ -1,0 +1,122 @@
+header {
+  background-color: $pr-color;
+  .navbar__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 52px;
+    border-bottom: 1px solid #333;
+  }
+  .site__logo {
+    display: flex;
+    width: 187px;
+    height: 34px;
+    margin: 24px 0 21px;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: flex;
+    }
+  }
+  .site__category {
+    display: flex;
+    width: 100%;
+    align-items: start;
+    justify-content: flex-end;
+  }
+  .category {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 26px;
+  }
+  .categorys {
+    color: $category;
+    @include font(400, 16, 1.2);
+  }
+  .site__navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-right: 40px;
+    border-right: 1px solid #333;
+  }
+  .getOn__wrap {
+    display: flex;
+    padding: 0 33px;
+    flex-shrink: 0;
+  }
+  .getOn-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    p {
+      color: $title;
+      @include font(400, 16, 1.2);
+    }
+    span {
+      display: flex;
+      width: 38px;
+      height: 1px;
+      background-color: $title;
+    }
+    border: none;
+    background-color: inherit;
+  }
+
+  .hero__wrap {
+    width: 100%;
+    padding: 80px 0;
+  }
+  .hero__info {
+    max-width: 890px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 13px 64px 0 65px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+  }
+  .hero__title {
+    color: $title;
+    @include font-l(700, 64, 1.2);
+  }
+  .hero__text{
+    color: $title;
+    @include font(400, 22, 1.6);
+    padding: 29px 0 35px;
+  }
+  .hero__btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $title;
+    border: none;
+    padding: 21px 24px 23px;
+    gap: 50px;
+    p{
+        color: $pr-color;
+        @include font(400, 18, 1.1);
+    }
+    svg{
+        display: flex;
+        object-fit: contain;
+        width: 29px;
+        height: 16px;
+        path{
+          fill: $pr-color;
+        }
+    }
+  }
+}

@@ -1,0 +1,65 @@
+.pages__wrap {
+  background-color: $pr-color;
+  .pages__cards {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 55px;
+  }
+  .page__card-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .page__title {
+    color: $title;
+    @include font-l(700, 40, 1.2);
+  }
+  .page__desc {
+    color: $text;
+    @include font(400, 18, 1.7);
+    max-width: 634px;
+    padding: 28px 0 43px;
+  }
+  .page__cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(392px, 358px));
+    gap: 33px 32px;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background-color: $card;
+    padding: 24px;
+    padding-bottom: 16px;
+  }
+  .card__img {
+    display: flex;
+    width: 100%;
+    height: 262px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .card__title-wrap {
+    @extend %fcc;
+    justify-content: space-between;
+    padding: 14px;
+  }
+  .card__title {
+    @include font(400, 16, 1.2);
+    color: $title;
+  }
+  .arrow {
+    display: flex;
+    width: 38px;
+    height: 1px;
+    background-color: $title;
+  }
+}
